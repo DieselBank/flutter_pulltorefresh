@@ -187,6 +187,42 @@ class ChRefreshString implements RefreshString {
 }
 
 /// English
+class PtBrRefreshString implements RefreshString {
+  @override
+  String canLoadingText = "Solte para carregar mais";
+
+  @override
+  String canRefreshText = "Solte para atualizar";
+
+  @override
+  String canTwoLevelText = "Solte para entrar no segundo nível";
+
+  @override
+  String idleLoadingText = "Puxe para Carregar mais";
+
+  @override
+  String idleRefreshText = "Puxe para Atualizar";
+
+  @override
+  String loadFailedText = "Carregamento falhou";
+
+  @override
+  String loadingText = "Carregando…";
+
+  @override
+  String noMoreText = "Sem dados novos";
+
+  @override
+  String refreshCompleteText = "Atualização finalizada";
+
+  @override
+  String refreshFailedText = "Atualização falhou";
+
+  @override
+  String refreshingText = "Atualizando…";
+}
+
+/// English
 class EnRefreshString implements RefreshString {
   @override
   String canLoadingText = "Release to load more";
