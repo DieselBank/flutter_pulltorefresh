@@ -187,7 +187,7 @@ class ChRefreshString implements RefreshString {
   String refreshingText = "刷新中…";
 }
 
-/// English
+/// Portuguese
 class PtBrRefreshString implements RefreshString {
   @override
   String canLoadingText = "Solte para carregar mais";
