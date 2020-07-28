@@ -320,7 +320,7 @@ class RuRefreshString implements RefreshString {
   String loadingText = "Загрузка…";
 
   @override
-  String noMoreText = "Больше да��ных нет";
+  String noMoreText = "Больше данных нет";
 
   @override
   String refreshCompleteText = "Обновление завершено";
