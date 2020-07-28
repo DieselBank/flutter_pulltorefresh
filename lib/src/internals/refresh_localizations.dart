@@ -75,7 +75,8 @@ class RefreshLocalizations {
     'it': ItRefreshString(),
     'ja': JpRefreshString(),
     'de': DeRefreshString(),
-    'pt-BR': PtBrRefreshString()
+    'pt-BR': PtBrRefreshString(),
+    'pt_BR': PtBrRefreshString()
   };
 
   RefreshString get currentLocalization {
@@ -99,7 +100,7 @@ class RefreshLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'de', 'pt-BR']
+    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'de', 'pt-BR', 'pt_BR']
         .contains(locale.languageCode);
   }
 
@@ -319,7 +320,7 @@ class RuRefreshString implements RefreshString {
   String loadingText = "Загрузка…";
 
   @override
-  String noMoreText = "Больше данных нет";
+  String noMoreText = "Больше да��ных нет";
 
   @override
   String refreshCompleteText = "Обновление завершено";
