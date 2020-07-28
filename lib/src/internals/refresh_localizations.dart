@@ -75,8 +75,7 @@ class RefreshLocalizations {
     'it': ItRefreshString(),
     'ja': JpRefreshString(),
     'de': DeRefreshString(),
-    'pt-BR': PtBrRefreshString(),
-    'pt_BR': PtBrRefreshString()
+    'pt': PtBrRefreshString(),
   };
 
   RefreshString get currentLocalization {
@@ -100,8 +99,17 @@ class RefreshLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'de', 'pt-BR', 'pt_BR']
-        .contains(locale.languageCode);
+    return [
+      'en',
+      'zh',
+      'fr',
+      'ru',
+      'uk',
+      'ja',
+      'it',
+      'de',
+      'pt',
+    ].contains(locale.languageCode);
   }
 
   @override
